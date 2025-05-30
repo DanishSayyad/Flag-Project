@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(136, 221, 193);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Arial, Helvetica;
+}
+
+h1 {
+    color: rgb(40, 185, 137);
+    font-size: 50px;
+    margin: 50px
+}
+
+h2 {
+    margin: 20px;
+}
+
+#janvi {
+    color: rgb(0, 159, 143);
+}
+
+.holder {
+    width: 700px;
+    background-color: aliceblue;
+    border-radius: 40px;
+    margin: 40px 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.cards > li {
+    width: 500px;
+    height: 400px;
+    text-align: left;
+    margin-left: 100px;
+}
+
+li::marker {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+footer {
+    flex-basis: 100%;
+    text-align: center;
+    color: rgb(35, 155, 115);
+    margin-bottom: 30px;
+}
+
+a {
+    color: rgb(35, 155, 115);
+    text-decoration: none;
+    margin: 10px;
+}
+
+@media (max-width: 800px) and (min-width: 571px){
+    .holder {
+        width: 500px;
+    }
+
+    .cards > li {
+        margin-left: 0;
+        list-style: none;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 570px) {
+    h1 {
+        font-size: 40px;
+    }
+    .holder {
+        width: 450px;
+    }
+
+    .cards > li {
+        margin-left: 0;
+        list-style: none;
+        width: 450px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .flag {
+        left: 4%
+    }
+}
